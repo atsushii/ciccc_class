@@ -1,18 +1,22 @@
-input_character = str(input())
+# problem 4
 
-input_character_length = len(input_character)
-result = ""
-check_input_character = ""
-for i in range(0, input_character_length):
-    a = input_character[input_character_length - 1 - i]
-    result += a
-print(result)
+# initialize
+reverse_string = ""
+check_input_string = ""
+input_string = str(input())
+input_string_length = len(input_string)
 
-result_length = len(result)
+# print reverse input string
+for i in range(0, input_string_length):
+    reverse_string += input_string[input_string_length - 1 - i]
+print(reverse_string)
 
-for i in range(0, result_length):
-    a = result[result_length - 1 - i]
-    check_input_character += a
+reverse_string_length = len(reverse_string)
 
-if input_character == check_input_character:
+# fix input string from reverse
+for i in range(0, reverse_string_length):
+    check_input_string += reverse_string[reverse_string_length - 1 - i]
+
+# Check the input string and the its reverse is the same
+if input_string == check_input_string:
     print('This is correct')
