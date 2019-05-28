@@ -15,7 +15,7 @@ def linear_search_list(numbers_list, number):
 
     """
     new_numbers_list = []
-    for i in range(0, len(numbers_list)):
+    for i in range(len(numbers_list)):
         if numbers_list[i] != number:
             new_numbers_list.append(numbers_list[i])
     return new_numbers_list

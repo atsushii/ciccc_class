@@ -18,7 +18,7 @@ def linear_search_list(numbers_list, number):
     """
 
     match_count = 0
-    for i in range(0, len(numbers_list)):
+    for i in range(len(numbers_list)):
         if numbers_list[i] == number and match_count == 0:
             index_number = i
         if numbers_list[i] == number:
