@@ -26,7 +26,7 @@ def main():
     """
 
     # testcase
-     gpa_tuple = ("Ali", 67, 87, 90, 45, 39)
-     print(check_student_gpa(gpa_tuple))
+    gpa_tuple = ("Ali", 67, 87, 90, 45, 39)
+    print(check_student_gpa(gpa_tuple))
 
 main()
