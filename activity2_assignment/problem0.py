@@ -1,6 +1,6 @@
 def print1DList(oned_list):
     """
-    print one dimention list
+    print one dimension list
 
     parameter
     --------------
@@ -11,7 +11,7 @@ def print1DList(oned_list):
 
 def print2DList(twed_list):
     """
-    print twe dimention list
+    print twe dimension list
 
     parameter
     --------------

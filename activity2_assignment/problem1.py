@@ -29,7 +29,6 @@ def main():
     problem1
     call function
     """
-
     # testcase
     numbers_list = [1,2,4,2,4,1,6]
     number = 2
