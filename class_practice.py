@@ -1,32 +1,26 @@
-total = 0.0
-count = 0
-inputstr = input("Enter value")
-while inputstr != "":
-    value = float(inputstr)
-    total =+ value
-    count =+ 1
-    inputstr = input("Enter value")
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 
-if count > 0:
-    avarage = total / count
-else:
-    avarage = 0
+n = {
+    "report": [
+        { "enrollment": "rit2011001", "name": "Julia",  "subject" : [ {"code": "DSA","grade": "A" } ] }
 
-print(avarage)
+        ,{"enrollment": "rit2011020", "name": "Samantha", "subject": [ {"code": "COM", "grade": "B"},{ "code": "DSA", "grade": "A"} ] } ]
+}
 
-NMAX = 4
-MMAX = 10
+dict = {}
+report_value = n['report']
+for i in range(len(report_value)):
+    for j in range(len(report_value[i]['subject'])):
+        student_list = []
+        student_list.append(report_value[i]['subject'][j]['code'])
+        student_list.append(report_value[i]['subject'][j]['grade'])
+        student_list.append(report_value[i]['enrollment'])
+        student_list.append(report_value[i]['name'])
+        dict[i + j] = student_list
 
-for i in range(1, MMAX + 1):
-    print("%10d" % i, end="")
-print()
+a = sorted(dict.values())
 
-for n in range(1, NMAX + 1):
-    print("%10s" % n, end="")
-print("\n", "     ", "-" * 35)
-
-for x in range(1, MMAX + 1):
-    for n in range(1, NMAX + 1):
-        print("%10.0f" % x ** n, end="")
-
+for i in a:
+    for n in i:
+        print(n,' ', end="")
     print()
